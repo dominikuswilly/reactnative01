@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {View, Text} from 'react-native';
 import {createStackNavigator} from 'react-navigation-stack';
 import {createAppContainer} from 'react-navigation';
+// import {API_HOST} from '../src/config';
+import Config from 'react-native-config';
 
 // import {
 //     StackNavigator
@@ -16,6 +18,7 @@ import {createAppContainer} from 'react-navigation';
 
 class Page1 extends Component {
   render() {
+    console.log(Config.API_HOST);
     return (
       <View>
         <Text>A</Text>
@@ -26,6 +29,7 @@ class Page1 extends Component {
 
 class Page2 extends Component {
   render() {
+    console.log(Config.API_HOST);
     return (
       <View>
         <Text>B</Text>
