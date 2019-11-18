@@ -7,16 +7,17 @@ import Config from 'react-native-config';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
 import {createDrawerNavigator} from 'react-navigation-drawer';
 
-// const AppNavigator = createStackNavigator(
-//   {
-//     HomeScreen: {screen: HomeScreen},
-//     AboutScreen: {screen: AboutScreen},
-//     ContactScreen: {screen: ContactScreen},
-//   },
-//   {
-//     initialRouteName: 'HomeScreen',
-//   },
-// );
+const HomeStack = createStackNavigator(
+  {
+    HomeScreen: {screen: HomeScreen},
+    AboutScreen: {screen: AboutScreen},
+    ContactScreen: {screen: ContactScreen},
+  },
+  {
+    initialRouteName: 'HomeScreen',
+    headerMode: 'none',
+  },
+);
 
 const MainTabs = createBottomTabNavigator({
   HomeScreen: {
@@ -41,6 +42,7 @@ const MainTabs = createBottomTabNavigator({
 
 const MainDrawer = createDrawerNavigator({
   MainTabs: MainTabs,
+  HomeStack: HomeStack,
 });
 
 const AppModalStack = createStackNavigator(

@@ -5,3 +5,5 @@ https://rogerdudler.github.io/git-guide/index.id.html
 https://medium.com/@vibhor.vibhu/react-native-redux-boilerplate-b7193b3cdf19
 
 https://alligator.io/react/react-native-redux/
+
+https://www.reactnativeschool.com/complex-navigation-example-with-react-navigation
