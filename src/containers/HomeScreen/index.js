@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {View, Text, Button} from 'react-native';
+import Header from './header';
 
 export default class HomeScreen extends Component {
   constructor(props) {
@@ -9,12 +10,17 @@ export default class HomeScreen extends Component {
 
   render() {
     return (
-      <View>
-        <Text> Homepage </Text>
-        <Button
-          title="Go to About"
-          onPress={() => this.props.navigation.navigate('AboutScreen')}
-        />
+      <View style={{flex:1}}>
+        <View style={{height:56}}><Header /></View>
+        <View style={{flex:1, alignItems:'center'}}>
+          <Text> Homepage </Text>
+        </View>
+        <View style={{flex:1, marginLeft:'10%', marginRight:'10%'}}>
+          <Button
+            title="Go to About"
+            onPress={() => this.props.navigation.navigate('AboutScreen')}
+          />
+        </View>
       </View>
     );
   }

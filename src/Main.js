@@ -19,26 +19,45 @@ const HomeStack = createStackNavigator(
   },
 );
 
-const MainTabs = createBottomTabNavigator({
-  HomeScreen: {
-    screen: HomeScreen,
-    navigationOptions: {
-      tabBarLabel: 'HOME',
+const MainTabs = createBottomTabNavigator(
+  {
+    HomeScreen: {
+      screen: HomeScreen,
+      navigationOptions: {
+        tabBarLabel: 'Beranda',
+      },
+    },
+    AboutScreen: {
+      screen: AboutScreen,
+      navigationOptions: {
+        tabBarLabel: 'Keranjang',
+      },
+    },
+    ContactScreen: {
+      screen: ContactScreen,
+      navigationOptions: {
+        tabBarLabel: 'Polis',
+      },
+    },
+    AkunScreen: {
+      screen: ContactScreen,
+      navigationOptions: {
+        tabBarLabel: 'Akun',
+      },
     },
   },
-  AboutScreen: {
-    screen: AboutScreen,
-    navigationOptions: {
-      tabBarLabel: 'ABOUT',
+  {
+    tabBarOptions: {
+      activeTintColor: '#FF0000',
+      labelStyle: {
+        fontSize: 12,
+      },
+      style: {
+        backgroundColor: '#FFFFFF',
+      },
     },
   },
-  ContactScreen: {
-    screen: ContactScreen,
-    navigationOptions: {
-      tabBarLabel: 'CONTACT',
-    },
-  },
-});
+);
 
 const MainDrawer = createDrawerNavigator({
   MainTabs: MainTabs,
