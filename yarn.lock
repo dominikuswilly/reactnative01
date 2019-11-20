@@ -2713,7 +2713,7 @@ fbjs-scripts@^1.1.0:
     semver "^5.1.0"
     through2 "^2.0.0"
 
-fbjs@^0.8.9:
+fbjs@^0.8.4, fbjs@^0.8.9:
   version "0.8.17"
   resolved "https://registry.yarnpkg.com/fbjs/-/fbjs-0.8.17.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
   integrity sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90=
@@ -5448,6 +5448,14 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
+react-addons-shallow-compare@15.6.2:
+  version "15.6.2"
+  resolved "https://registry.yarnpkg.com/react-addons-shallow-compare/-/react-addons-shallow-compare-15.6.2.tgz#198a00b91fc37623db64a28fd17b596ba362702f"
+  integrity sha1-GYoAuR/DdiPbZKKP0XtZa6NicC8=
+  dependencies:
+    fbjs "^0.8.4"
+    object-assign "^4.1.0"
+
 react-art@^16.3.2:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react-art/-/react-art-16.12.0.tgz#3a0169e4db262f2c663e38488f81a1ba4b0045c6"
@@ -5527,6 +5535,11 @@ react-native-gesture-handler@^1.5.0:
     invariant "^2.2.4"
     prop-types "^15.7.2"
 
+react-native-image-slider-box@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/react-native-image-slider-box/-/react-native-image-slider-box-1.0.5.tgz#11dfcd0c19167c0c2bac1a96ca1c5eaa9dcf05a3"
+  integrity sha512-NLZanwQPGEy6CdIEALM8XFkgmyDKLQnl5qtUj6cNGaoe5Zzf8ePImZbwEcihPsQObCuHGPdpMJvwwma23VG8/A==
+
 react-native-maps@^0.26.1:
   version "0.26.1"
   resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.26.1.tgz#6ec316259b38d259c8974448d894bd7a23101da4"
@@ -5594,6 +5607,14 @@ react-native-screens@^2.0.0-alpha.11:
   dependencies:
     debounce "^1.2.0"
 
+react-native-snap-carousel@^3.8.4:
+  version "3.8.4"
+  resolved "https://registry.yarnpkg.com/react-native-snap-carousel/-/react-native-snap-carousel-3.8.4.tgz#4c749c6a714d46ed82de527233850cb5da41bc62"
+  integrity sha512-KMxLl75Tyf12DzeTCtV7xU0KuPZQQs/2+2iM90cgxcm3lrg4+hLXff5/61ynasBkzzJ5v4bTRq5CEy/qGUJVQw==
+  dependencies:
+    prop-types "^15.6.1"
+    react-addons-shallow-compare "15.6.2"
+
 react-native-status-bar-height@^2.2.0:
   version "2.4.0"
   resolved "https://registry.yarnpkg.com/react-native-status-bar-height/-/react-native-status-bar-height-2.4.0.tgz#de8cee4bb733a196167210d2d0bc1fa10acba3e3"
@@ -5623,6 +5644,13 @@ react-native-vector-icons@^4.6.0:
     lodash "^4.0.0"
     prop-types "^15.5.10"
     yargs "^8.0.2"
+
+react-native-web-swiper@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-web-swiper/-/react-native-web-swiper-2.1.0.tgz#5b321819ee17ff1f7bc4ffd89388acf24b7b7fb7"
+  integrity sha512-TzHJIoHLEps03XFZp+8CLpvBbKxjIzqymaQeVemsNdGCqpVSMyCV7VN+2Yq3PZOGL49w5F0iynp80yGrDa7REA==
+  dependencies:
+    prop-types "^15.6.2"
 
 react-native@0.60.6:
   version "0.60.6"
